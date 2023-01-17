@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1177DBFF296C7C01006A15D2 /* credview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177DBFE296C7C01006A15D2 /* credview.swift */; };
 		11C65254296B59AD003FD729 /* Faceid_verificationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65253296B59AD003FD729 /* Faceid_verificationApp.swift */; };
 		11C65256296B59AD003FD729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65255296B59AD003FD729 /* ContentView.swift */; };
 		11C65258296B59B0003FD729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C65257296B59B0003FD729 /* Assets.xcassets */; };
 		11C6525B296B59B0003FD729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C6525A296B59B0003FD729 /* Preview Assets.xcassets */; };
+		11C65263296C14AE003FD729 /* title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65262296C14AE003FD729 /* title.swift */; };
+		11C65265296C15B3003FD729 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65264296C15B3003FD729 /* button.swift */; };
+		11C65268296C18A6003FD729 /* faceidview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65267296C18A6003FD729 /* faceidview.swift */; };
+		11C6526A296C1DE8003FD729 /* authmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C65269296C1DE8003FD729 /* authmanager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1177DBFE296C7C01006A15D2 /* credview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = credview.swift; sourceTree = "<group>"; };
 		11C65250296B59AD003FD729 /* Faceid-verification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Faceid-verification.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C65253296B59AD003FD729 /* Faceid_verificationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faceid_verificationApp.swift; sourceTree = "<group>"; };
 		11C65255296B59AD003FD729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11C65257296B59B0003FD729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C6525A296B59B0003FD729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11C65262296C14AE003FD729 /* title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = title.swift; sourceTree = "<group>"; };
+		11C65264296C15B3003FD729 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
+		11C65267296C18A6003FD729 /* faceidview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faceidview.swift; sourceTree = "<group>"; };
+		11C65269296C1DE8003FD729 /* authmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authmanager.swift; sourceTree = "<group>"; };
+		11C6526B296C2D59003FD729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,12 @@
 		11C65252296B59AD003FD729 /* Faceid-verification */ = {
 			isa = PBXGroup;
 			children = (
+				11C6526B296C2D59003FD729 /* Info.plist */,
 				11C65253296B59AD003FD729 /* Faceid_verificationApp.swift */,
-				11C65255296B59AD003FD729 /* ContentView.swift */,
+				11C65266296C180A003FD729 /* views */,
+				11C65261296C148C003FD729 /* Components */,
 				11C65257296B59B0003FD729 /* Assets.xcassets */,
+				11C65269296C1DE8003FD729 /* authmanager.swift */,
 				11C65259296B59B0003FD729 /* Preview Content */,
 			);
 			path = "Faceid-verification";
@@ -65,6 +79,25 @@
 				11C6525A296B59B0003FD729 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		11C65261296C148C003FD729 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				11C65262296C14AE003FD729 /* title.swift */,
+				11C65264296C15B3003FD729 /* button.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		11C65266296C180A003FD729 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				11C65255296B59AD003FD729 /* ContentView.swift */,
+				11C65267296C18A6003FD729 /* faceidview.swift */,
+				1177DBFE296C7C01006A15D2 /* credview.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C65263296C14AE003FD729 /* title.swift in Sources */,
+				11C6526A296C1DE8003FD729 /* authmanager.swift in Sources */,
 				11C65256296B59AD003FD729 /* ContentView.swift in Sources */,
 				11C65254296B59AD003FD729 /* Faceid_verificationApp.swift in Sources */,
+				1177DBFF296C7C01006A15D2 /* credview.swift in Sources */,
+				11C65265296C15B3003FD729 /* button.swift in Sources */,
+				11C65268296C18A6003FD729 /* faceidview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +305,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Faceid-verification/Preview Content\"";
+				DEVELOPMENT_TEAM = K535TQLTGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Faceid-verification/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "allow faceid to login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -295,9 +335,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Faceid-verification/Preview Content\"";
+				DEVELOPMENT_TEAM = K535TQLTGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Faceid-verification/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "allow faceid to login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
